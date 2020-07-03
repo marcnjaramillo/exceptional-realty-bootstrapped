@@ -1,4 +1,17 @@
 /*/////// MEDIA ////////*/
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/intro-pic.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.display-4, .lead {
+  text-align: center;
+  color: white;
+}
 
 img, video, audio, iframe, table, form {
   width: 100%; /* IE */
@@ -6,9 +19,17 @@ img, video, audio, iframe, table, form {
 }
 
 /*/////// LAYOUT STYLES ////////*/
+/* .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+} */
 
 .row {
   margin-bottom: 20px;
+}
+
+.card-body {
+  text-align: center;
 }
 
 /*/////// CAROUSEL STYLES ////////*/
