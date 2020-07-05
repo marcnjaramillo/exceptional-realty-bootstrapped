@@ -13,25 +13,45 @@
   color: white;
 }
 
+.card-img-overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) );
+}
+
 img, video, audio, iframe, table, form {
   width: 100%; /* IE */
   max-width: 100%; /* FF, Safari, Chrome */
 }
 
 /*/////// LAYOUT STYLES ////////*/
-/* .container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
-} */
-
-.row {
-  margin-bottom: 20px;
+.container-fluid > .listings {
+  /* padding-left: 0px;
+  padding-right: 0px; */
+  padding-bottom: 40px;
 }
+
+.listings > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.listings > .row > .col-xs-4 {
+  display: inline-block;
+  float: none;
+}
+
+/* .row {
+  margin-bottom: 20px;
+} */
 
 .card-body {
   text-align: center;
 }
 
+#company-news {
+  padding-left: 4em;
+  padding-right: 4em;
+}
 /*/////// CAROUSEL STYLES ////////*/
 
 #carousel-example-generic .item img {
