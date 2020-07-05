@@ -1,4 +1,8 @@
-/*/////// MEDIA ////////*/
+.navbar-custom {
+  background-color: #4e3126;
+}
+
+
 .jumbotron {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/intro-pic.jpg");
   height: 50%;
@@ -20,19 +24,27 @@
 img, video, audio, iframe, table, form {
   width: 100%; /* IE */
   max-width: 100%; /* FF, Safari, Chrome */
+  height: 100%;
+  max-height: 100%
 }
 
-/*/////// LAYOUT STYLES ////////*/
-.container-fluid > .listings {
-  /* padding-left: 0px;
-  padding-right: 0px; */
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
   padding-bottom: 40px;
+}
+
+.listings {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .listings > .row {
   display: block;
   overflow-x: auto;
   white-space: nowrap;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .listings > .row > .col-xs-4 {
@@ -40,51 +52,39 @@ img, video, audio, iframe, table, form {
   float: none;
 }
 
-/* .row {
-  margin-bottom: 20px;
-} */
-
 .card-body {
   text-align: center;
+}
+
+#company-info {
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 #company-news {
   padding-left: 4em;
   padding-right: 4em;
 }
-/*/////// CAROUSEL STYLES ////////*/
 
-#carousel-example-generic .item img {
-  height: auto;
+#links {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 35px;
 }
 
-.carousel-caption p {
-  display: none;
+p {
+  line-height: 1.6;
+  font-size: 1.5em;
 }
 
-@media only screen and (min-width: 768px) {
-  #carousel-example-generic .item img {
-    height: 384px;
-  }
+footer {
+  padding-top: 15px ;
+  background-color: #6f4839;
+  color: white;
 }
 
-@media only screen and (min-width: 992px) {
-  #carousel-example-generic .item img {
-    height: 496px;
-  }
-
-  .carousel-caption p {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  #carousel-example-generic .item img {
-    height: 600px;
-  }
-
-  .carousel-caption p {
-    display: block;
-  }
-
+footer > .row {
+  margin-right: 0px;
+  margin-left: 0px;
 }
